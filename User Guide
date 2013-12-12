@@ -2,5 +2,7 @@ How to run the program ?
 # This is a shellscript based program. A user needs to open the terminal window in Unix 
 (fedora, Ubuntu, Redhat or other Unix distrubutions) in order to run this program.
   The following commands need to be run:
-  1.
-  2.
+  1. Run the command ./employee.sh in the repository that you want to start builing the employee directory in
+  2. Then enter information about the employee, ex. Name, Position, Salary, Email, Phone Number
+  3. After this information has been inputted, you should see the employee's information listed in a file that is in
+  a directory pertaining to the employee's position
