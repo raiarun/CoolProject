@@ -2,7 +2,7 @@ CoolProject
 ===========
 Employee Systems Database
 
-contributors: rarun7, ranour93
+Contributors: rarun7, ranour93
 url:https://github.com/raiarun
 
 Purpose : This project is about developing a well organized database system in order to store information of employees in a company by utilizing shell script. 
