@@ -5,7 +5,7 @@ Employee Systems Database
 Contributors: rarun7, ranour93
 url:https://github.com/raiarun
 
-Purpose : This project is about developing a well organized database system in order to store information of employees in a company by utilizing shell script. 
+Purpose : This project is about developing a well organized database system in order to store information of employees in a company by utilizing shell script in Unix environement. 
 
 Specification : A user will be able to 
 input information from the command line  about each employee such as names, types of employment and salary.
