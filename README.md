@@ -6,6 +6,7 @@ contributors: rarun7, ranour93
 url:https://github.com/raiarun
 
 Purpose : This project is about developing a well organized database system in order to store information of employees in a company by utilizing shell script. 
+
 Specification : A user will be able to 
 input information from the command line  about each employee such as names, types of employment and salary.
 The program will take the input from the command line, organize the information and put into differenet directories. The user
