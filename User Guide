@@ -3,7 +3,7 @@ How to run the program ?
 (fedora, Ubuntu, Redhat or other Unix distrubutions) in order to run this program.
   The following commands need to be run:
   
-  1. Navigate to your local directory where you want a copy of the program. For eg. 
+  1. Open the terminal and navigate to your local directory where you want a copy of the program. For eg. 
     cd ~/ece2524/localdir.
   2. clone a copy of the project to your local directory as - git clone htttps://github.com/raiarun/CoolProject.git
   3. Now you have a copy of the program in your local directory. Make the file employee.sh executable by
