@@ -23,13 +23,16 @@ sal=$salary
 em=$email
 ph=$phone
 
+#Create a main directory 
 if [ -d "$main" ]; then
 	cd "$main"
 else
 	mkdir -p "$main"
 	cd "$main"
 fi
-
+#Create a sub-directory named with the type of the employee
+#Create a file insided the sub-directory named with the employee name
+#the file will cotain the information of the emnployees
 if [ -d "$pos" ]; then
 	cd "$pos"
   	echo "Name: $n" > $n
