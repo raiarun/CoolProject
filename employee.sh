@@ -1,6 +1,8 @@
 #Created By Ryan Nour and Arun Rai on 12/11/2013
 #!/bin/sh
 
+#Define parameters for storing employee
+#information
 echo "Name: " 
 read name
 echo "" #used to indicate a new line so that the data is properly formatted
@@ -16,6 +18,7 @@ echo ""
 echo "Phone Number:"
 read phone
 
+#Declare and define a main directory
 main=EmployeeInfo
 pos=$position
 n=$name
