@@ -1,8 +1,10 @@
 #Created By Ryan Nour and Arun Rai on 12/11/2013
 #!/bin/sh
+
 while :
 do
 
+# define different variable for storing employee information
 echo "Name: " 
 read name
 echo "" #used to indicate a new line so that the data is properly formatted
@@ -18,6 +20,7 @@ echo ""
 echo "Phone Number:"
 read phone
 
+# create a main directory
 main=EmployeeInfo
 pos=$position
 n=$name
@@ -25,8 +28,9 @@ sal=$salary
 em=$email
 ph=$phone
 
+# counter to count the number of employees entered
 ((y++))
-#Create a main directory 
+
 if [ -d "$main" ]; then
 	cd "$main"
 else
