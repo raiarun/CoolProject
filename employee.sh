@@ -57,18 +57,19 @@ else
 	echo "Phone: $ph" >> $n
 fi
 
+# prompt user for more employee information
 echo "Doy you want to enter information of more employees ?"
 echo "Enter y for yes or n for No : "
 read more
 
 if [ "$more" == "n" ]; then
-echo "********* You have entered information of $y employees. ****************"
-echo " "
-break
+	echo "********* You have entered information of $y employees. ****************"
+	echo " "
+	break  # break out of loop if no more information is to be entered
 else
-echo "*************  The number of employees you have entered : $y ************"
-echo "*************************************************************************"
-echo " " 
+	echo "*************  The number of employees you have entered : $y ************"
+	echo "*************************************************************************"
+	echo " " 
 fi
 
 #end while
