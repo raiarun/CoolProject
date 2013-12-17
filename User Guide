@@ -10,9 +10,8 @@ How to run the program ?
      running a command : $ chmod +755 employee.sh
   4. Run the command - $./employee.sh in the repository that you want to start building the employee directory in.
   5. Then enter information about the employee, ex. Name, Position, Salary, Email, Phone Number.
-  6. After this information has been inputted, you should see the employee's information listed in a file that is in
-     directory pertaining to the employee's position.
-  7. A directory named 'EmployeeInfo' will be creaed. You can 'cd' into the directory and 
-    it's subdirectory and finally open 
-    a file named with the employee's name containing the information you just entered.
-  8. You may open file with 'Nano' or 'Emacs' : run command - $ emacs file or $ nano file
+  6. A main directory named 'EmployeeInfo' will be creaed. You can 'cd' into the directory and 
+    it's subdirectory and finally open a file named with the employee's name containing the information you just entered.
+  7. You may open the file with 'Nano' or 'Emacs' : run command - $ emacs file or $ nano file
+  8. To remove a file : run command - $ rm file - and to remove a directory : run command -
+    $ rm -r directory.
