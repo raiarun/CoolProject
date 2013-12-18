@@ -1,6 +1,9 @@
 #Created By Ryan Nour and Arun Rai on 12/11/2013
 #!/bin/sh
+while :
+do
 
+# define different variables to store information of employees
 echo "Name: " 
 read name
 echo "" #used to indicate a new line so that the data is properly formatted
@@ -13,8 +16,17 @@ echo ""
 echo "Email:"
 read email
 echo ""
-echo "Phone Number:"
+echo "Phone Number (follow the format : 555-555-5555) :"
+
+while :
+do
 read phone
+if [ "${#phone}" -eq 12 ]; then
+    break
+else
+    echo "Error! please, follow the instruction and enter again."
+fi
+done
 
 main=EmployeeInfo
 pos=$position
@@ -23,6 +35,7 @@ sal=$salary
 em=$email
 ph=$phone
 
+((y++))
 #Create a main directory 
 if [ -d "$main" ]; then
 	cd "$main"
@@ -30,9 +43,11 @@ else
 	mkdir -p "$main"
 	cd "$main"
 fi
+
 #Create a sub-directory named with the type of the employee
 #Create a file insided the sub-directory named with the employee name
 #the file will cotain the information of the emnployees
+
 if [ -d "$pos" ]; then
 	cd "$pos"
   	echo "Name: $n" > $n
@@ -48,4 +63,19 @@ else
 	echo "Phone: $ph" >> $n
 fi
 
-exit 0
+echo "Doy you want to enter information of more employees ?"
+echo "Enter y for yes or n for No : "
+read more
+
+if [ "$more" == "n" ]; then
+echo "********* You have entered information of $y employees. ****************"
+echo " "
+break
+else
+echo "*************  The number of employees you have entered : $y ************"
+echo "*************************************************************************"
+echo " " 
+fi
+
+#end while
+done 
