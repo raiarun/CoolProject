@@ -3,7 +3,7 @@
 while :
 do
 
-# define different variables to store information of employees
+# define different variable for storing employee information
 echo "Name: " 
 read name
 echo "" #used to indicate a new line so that the data is properly formatted
@@ -28,6 +28,7 @@ else
 fi
 done
 
+# create a main directory
 main=EmployeeInfo
 pos=$position
 n=$name
@@ -35,8 +36,9 @@ sal=$salary
 em=$email
 ph=$phone
 
+# counter to count the number of employees entered
 ((y++))
-#Create a main directory 
+
 if [ -d "$main" ]; then
 	cd "$main"
 else
@@ -63,6 +65,7 @@ else
 	echo "Phone: $ph" >> $n
 fi
 
+# prompt user for more employee information
 echo "Doy you want to enter information of more employees ?"
 echo "Enter y for yes or n for No : "
 read more
@@ -70,11 +73,11 @@ read more
 if [ "$more" == "n" ]; then
 echo "********* You have entered information of $y employees. ****************"
 echo " "
-break
+	break  # break out of loop if no more information is to be entered
 else
-echo "*************  The number of employees you have entered : $y ************"
-echo "*************************************************************************"
-echo " " 
+	echo "*************  The number of employees you have entered : $y ************"
+	echo "*************************************************************************"
+	echo " " 
 fi
 
 #end while
